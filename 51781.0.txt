@@ -1,0 +1,47 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+MOV 0 RIGHT
+MOV 1 RIGHT
+
+@9
+NEWLINE:
+  MOV LEFT DOWN
+  MOV ACC DOWN
+  SAV
+  MOV 30 ACC
+
+LINE: MOV 3 DOWN
+  MOV 0 DOWN
+  SUB 2
+  JEZ NEXT
+  JMP LINE
+
+NEXT: MOV -1 DOWN
+  SWP
+  ADD 1
+
+@10
+
